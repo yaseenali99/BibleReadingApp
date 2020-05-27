@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  background-color: gray;
+}
+
+button{
+border-radius: 10%;
+/* padding: 10px, x ; */
+margin: 10px 20px; /* The first number is top and bottom, 2nd is space between*/
+}
+
+#page-title{
+  background-color: lightblue;
+}
