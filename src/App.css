@@ -2,13 +2,34 @@
   text-align: center;
   background-color: gray;
 }
-
+/* 
 button{
 border-radius: 10%;
-/* padding: 10px, x ; */
-margin: 10px 20px; /* The first number is top and bottom, 2nd is space between*/
-}
+padding: 10px, x ;
+margin: 10px 2px; /* The first number is top and bottom, 2nd is space between* 
+} */
 
 #page-title{
-  background-color: lightblue;
+  background-color: #EF7B45;
+}
+
+.btn-book{
+  background-color: #EF7B45;
+}
+
+.btn-pane {
+  background-color: #CDEDF6;
+  color: #042A2B;
+}
+
+.scrip-pane{
+  background-color: #CDEDF6;
+  color: #042A2B;
+}
+.back{
+  background-color: #042A2B;
+}
+
+.scrip-top{
+  background-color: #5EB1BF;
 }
