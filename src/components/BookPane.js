@@ -23,17 +23,21 @@ class BookList extends React.Component{
      }
         render(){
         return(
-            
-            <div id='booklist' style={{overflow:'auto', height:'100%'}} className='text-left alert-dark'>
+            <div className="btn-pane">
+                <h2 className="sticky-top scrip-top">Books of the Bible</h2>
+            <div id='booklist' style={{overflow:'auto', height:'100vh'}} className='btn-pane text-left alert-primary sticky-top'>
                
-                <h3>Books of the Bible</h3>
+                
                 {this.props.bookList.map( book => {return(
-                    <div key={book.id}>
-                        <button className="btn btn-block"  onClick={() => this.wrapper(book)}>{book.name}</button><br/>
+                    <div key={book.id} className="btn-pane ">
+                        <button className="btn btn-pane  my-1"  onClick={() => this.wrapper(book)}>
+                        <i class="fa fa-book mx-2"></i>
+                            {book.name}</button><br/>
                     </div>
                     )}    
                 )} 
             
+            </div>
             </div>
         );
     }

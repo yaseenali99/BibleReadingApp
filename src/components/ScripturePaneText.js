@@ -58,27 +58,36 @@ import React, { Component } from 'react'
 
     render() {
         return (
-            <div>
+            <div style={{overflow:'auto', height:'100vh'}}>
                  {/* Scripture Pane */}
                 <div id='scripture-pane' className="card">
-                    <div className="card-header">
+                    <div className="card-header scrip-top">
 
                         <h1 >{this.props.currBook.name }</h1>
 
-                        <div key="chap.id" >
+                        <div>
+                        <div class="dropdown">
+                            <button class="btn btn-book dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Chapter {this.props.currChap.number}
+                            </button>
+                            <div class="dropdown-menu btn-book" aria-labelledby="dropdownMenuButton">
+
+
                                 {(this.props.currBook.chapters!== undefined) ? this.props.currBook.chapters.map(chap => {return(
-                                        <button key={chap.id} onClick={() =>this.getScriptureText(chap.id)}>{chap.number}</button>                    
+                                        <button className = "m-0 btn-white " key={chap.id} onClick={() =>this.getScriptureText(chap.id)}>{chap.number}</button>                    
                                     ) }) : "Blank"
                                 }                                
+                            </div>
+                        </div>
                         </div>
                     </div>
                    
 
-                    <div className="eb-container text-justify card-body">
+                    <div className=" scrip-pane text-justify card-body" >
                         
-                        <div>
+                        {/* <div>
                             <h3>Chapter {this.props.currChap.number}</h3>
-                        </div>
+                        </div> */}
                         
                         {(this.props.currChap.content === undefined) ? "Please Select a Ca" : this.props.currChap.content}
                     </div>

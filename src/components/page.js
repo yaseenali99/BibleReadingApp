@@ -58,7 +58,10 @@ class Page extends React.Component{
 render(){
     return(
     <div>
-        <div className='row'>   
+        
+
+
+        <div className='row back'>   
             <div className='col-4'>
                 <BookList apiKey={this.apiKey} bookClicked={this.bookClicked} setCurrChap={this.setCurrChap} bookList={this.state.bookList} baseURL = {this.baseURL} bibleId = {this.bibleID}/>
             </div> 
