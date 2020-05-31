@@ -31,7 +31,7 @@ class BookList extends React.Component{
                 {this.props.bookList.map( book => {return(
                     <div key={book.id} className="btn-pane ">
                         <button className="btn btn-pane  my-1"  onClick={() => this.wrapper(book)}>
-                        <i class="fa fa-book mx-2"></i>
+                        <i className="fa fa-book mx-2"></i>
                             {book.name}</button><br/>
                     </div>
                     )}    
