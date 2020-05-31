@@ -66,11 +66,11 @@ import React, { Component } from 'react'
                         <h1 >{this.props.currBook.name }</h1>
 
                         <div>
-                        <div class="dropdown">
-                            <button class="btn btn-book dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div className="dropdown">
+                            <button className="btn btn-book dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Chapter {this.props.currChap.number}
                             </button>
-                            <div class="dropdown-menu btn-book" aria-labelledby="dropdownMenuButton">
+                            <div className="dropdown-menu btn-book" aria-labelledby="dropdownMenuButton">
 
 
                                 {(this.props.currBook.chapters!== undefined) ? this.props.currBook.chapters.map(chap => {return(
